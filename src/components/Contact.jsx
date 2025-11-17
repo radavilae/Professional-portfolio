@@ -239,7 +239,7 @@ const Contact = () => {
             GitHub
           </a>
           <a
-            href="https://www.linkedin.com/in/radavilae"
+            href="https://www.linkedin.com/in/radavilae/"
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-3 border border-gray-900 text-gray-900 text-sm hover:bg-gray-50 transition-colors"

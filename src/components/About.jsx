@@ -71,7 +71,7 @@ const About = () => {
                   <div>{t.about.cv.location}: Barcelona</div>
                 </div>
                 <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-600 mt-2">
-                  <div>{t.about.cv.linkedin}: <a href="https://www.linkedin.com/in/radavilae" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:underline">www.linkedin.com/in/radavilae</a></div>
+                  <div>{t.about.cv.linkedin}: <a href="https://www.linkedin.com/in/radavilae/" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:underline">www.linkedin.com/in/radavilae</a></div>
                   <div>{t.about.cv.github}: <a href="https://github.com/radavilae" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:underline">radavilae</a></div>
                 </div>
               </div>

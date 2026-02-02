@@ -16,7 +16,7 @@ const Hero = () => {
           {t.hero.title}
         </p>
         <p className="text-xl md:text-2xl text-gray-600 font-light mb-12 max-w-2xl mx-auto">
-          {t.hero.description}
+          Transformando ideas en mundos digitales
         </p>
         <div className="flex gap-4 justify-center">
           <a

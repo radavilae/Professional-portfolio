@@ -1,7 +1,8 @@
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations/translations';
-import uniformesCandiImage from '../assets/40candi.jpeg';
-import spanishWineCampsImage from '../assets/fotoviñedos.jpg';
+import uniformesCandiImage from '../assets/images/40candi.jpeg';
+import spanishWineCampsImage from '../assets/images/spanishwinecamps.jpg';
+import raulDavilaImage from '../assets/images/rauldavila.jpg';
 
 const Projects = () => {
   const { language } = useLanguage();
@@ -26,13 +27,22 @@ const Projects = () => {
       codeUrl: t.projects.project2.codeUrl,
       image: spanishWineCampsImage,
     },
+    {
+      id: 3,
+      title: t.projects.project3.title,
+      description: t.projects.project3.description,
+      technologies: ['React', 'Vite', 'JavaScript', 'HTML5', 'CSS3', 'Tailwind CSS', 'EmailJS'],
+      websiteUrl: t.projects.project3.websiteUrl,
+      codeUrl: t.projects.project3.codeUrl,
+      image: raulDavilaImage,
+    },
   ];
 
   return (
     <section id="projects" className="py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-light text-gray-900 mb-16">{t.projects.title}</h2>
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {projects.map((project) => (
             <div
               key={project.id}

@@ -1,16 +1,10 @@
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations/translations';
+import { scrollToSection } from '../utils/helpers';
 
 const Navbar = () => {
   const { language, toggleLanguage } = useLanguage();
   const t = translations[language];
-
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm border-b border-gray-200/50">

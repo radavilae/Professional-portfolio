@@ -3,6 +3,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations/translations';
 import emailjs from '@emailjs/browser';
 import { emailjsConfig } from '../config/emailjs.config';
+import { validateEmail } from '../utils/helpers';
 
 const Contact = () => {
   const { language } = useLanguage();
@@ -25,10 +26,6 @@ const Contact = () => {
       emailjs.init(emailjsConfig.publicKey);
     }
   }, []);
-
-  const validateEmail = (email) => {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;

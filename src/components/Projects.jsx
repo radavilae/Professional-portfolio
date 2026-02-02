@@ -81,7 +81,7 @@ const Projects = () => {
                       {t.projects.viewWebsite}
                     </a>
                   )}
-                  {project.codeUrl && (
+                  {project.codeUrl && project.id !== 3 && (
                     <a
                       href={project.codeUrl}
                       target="_blank"

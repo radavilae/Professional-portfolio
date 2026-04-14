@@ -36,10 +36,7 @@ const Hero = () => {
           {t.hero.title}
         </p>
         
-        {/* Mensaje principal - "Transformando ideas en mundos digitales" */}
-        <p className="text-xl md:text-2xl text-gray-600 font-light mb-12 max-w-2xl mx-auto">
-          Transformando ideas en mundos digitales
-        </p>
+        <div className="mb-12" />
         
         {/* Botones de acción */}
         <div className="flex gap-4 justify-center">

@@ -11,6 +11,7 @@ import { translations } from '../translations/translations';
 import uniformesCandiImage from '../assets/images/40candi.jpeg';
 import spanishWineCampsImage from '../assets/images/spanishwinecamps.jpg';
 import raulDavilaImage from '../assets/images/rauldavila.jpg';
+import photoMicheleImage from '../assets/images/photomichele.jpeg';
 
 const Projects = () => {
   // 🎯 Obtenemos el idioma actual y las traducciones
@@ -33,7 +34,7 @@ const Projects = () => {
       id: 2,
       title: t.projects.project2.title,
       description: t.projects.project2.description,
-      technologies: ['React', 'Vite', 'JavaScript', 'HTML5', 'CSS3', 'Tailwind CSS', 'MongoDB'],
+      technologies: ['React', 'Vite', 'JavaScript', 'HTML5', 'CSS3', 'Tailwind CSS', 'Strapi 5 CMS', 'GitHub Actions', 'Render', 'PostgreSQL', 'React Router', 'Strapi 5', 'Node.js', 'REST API', 'Vercel'],
       websiteUrl: t.projects.project2.websiteUrl,
       codeUrl: t.projects.project2.codeUrl,
       image: spanishWineCampsImage,
@@ -46,6 +47,15 @@ const Projects = () => {
       websiteUrl: t.projects.project3.websiteUrl,
       codeUrl: t.projects.project3.codeUrl,
       image: raulDavilaImage,
+    },
+    {
+      id: 4,
+      title: t.projects.project4.title,
+      description: t.projects.project4.description,
+      technologies: ['WordPress', 'Blocksy', 'Gutenberg', 'HTML5', 'CSS3', 'Responsive Design', 'SEO'],
+      websiteUrl: t.projects.project4.websiteUrl,
+      codeUrl: t.projects.project4.codeUrl,
+      image: photoMicheleImage,
     },
   ];
 

@@ -77,7 +77,7 @@ export const translations = {
       project2: {
         title: 'Spanish Wine Camps (en desarrollo)',
         description: 'Desarrollé Spanish Wine Camps, una web interactiva dedicada a experiencias en viñedos de España, enfocada en ofrecer información clara y visualmente atractiva sobre itinerarios, actividades y alojamientos. El proyecto cuenta con un diseño moderno y responsive, integración de contenido multimedia (imágenes, mapas y videos), navegación optimizada y secciones dinámicas que facilitan la exploración de experiencias. Actualmente, el proyecto está en work in progress, con próximas mejoras planificadas, incluyendo la implementación de un sistema de login y gestión de reservas, que permitirá a los usuarios registrarse, personalizar su experiencia, reservar y pagar directamente con tarjeta de crédito desde la plataforma. La web está desarrollada siguiendo buenas prácticas de front-end, con código limpio, modular y escalable, facilitando futuras integraciones de back-end y nuevas funcionalidades. Este enfoque combina experiencia de usuario, diseño visual y escalabilidad, posicionando la plataforma como una solución tecnológica completa para la promoción y gestión de experiencias enoturísticas.',
-        websiteUrl: 'https://spanish-wine-camps.vercel.app/',
+        websiteUrl: 'https://spanishwinecamps.com/',
         codeUrl: '',
       },
       project3: {
@@ -85,6 +85,12 @@ export const translations = {
         description: 'Este portafolio fue desarrollado como una aplicación frontend utilizando React junto con Vite como entorno de desarrollo y build, lo que permite una carga rápida, modular y optimizada del proyecto. La aplicación sigue una arquitectura SPA, donde todo el contenido se renderiza dinámicamente en el DOM mediante el Virtual DOM de React.\n\nLa interfaz está construida con Tailwind CSS, lo que facilita un diseño sobrio, responsive y coherente, además de permitir una personalización sencilla de estilos y cambio dinámico de color/tema. La estructura del proyecto se basa en componentes reutilizables, favoreciendo la escalabilidad y el mantenimiento del código.\n\nEl sitio incorpora soporte multilingüe, gestionando el contenido de forma dinámica para adaptarse a distintos idiomas sin recargar la página. Se priorizó la experiencia de usuario, el rendimiento y la claridad visual, manteniendo una separación clara entre lógica, presentación y estructura.',
         websiteUrl: 'https://rauldavila.io',
         codeUrl: 'https://github.com/radavilae/portfolio',
+      },
+      project4: {
+        title: 'Portfolio Artistico Michele Perna Bauer',
+        description: 'Desarrollé este portfolio artístico con WordPress, priorizando una presentación visual limpia, elegante y totalmente responsive para mostrar obra y trayectoria profesional. El sitio está construido sobre una base modular con el tema Blocksy y el editor de bloques Gutenberg, lo que facilita la gestión de contenidos, la edición de secciones y la escalabilidad del proyecto sin comprometer rendimiento ni consistencia visual.\n\nLa arquitectura del sitio está orientada a contenido, con una navegación clara, tipografía cuidada, optimización básica SEO y estructura adaptable a diferentes dispositivos. Este enfoque permite mantener y actualizar el portfolio de forma ágil, asegurando una experiencia de usuario fluida y profesional.',
+        websiteUrl: 'https://michelepbauer.space/',
+        codeUrl: '',
       },
     },
     contact: {
@@ -188,7 +194,7 @@ export const translations = {
       project2: {
         title: 'Spanish Wine Camps (in development)',
         description: 'I developed Spanish Wine Camps, an interactive website dedicated to wine experiences in Spain, focused on providing clear and visually appealing information about itineraries, activities, and accommodations. The project features a modern and responsive design, multimedia content integration (images, maps, and videos), optimized navigation, and dynamic sections that facilitate the exploration of experiences. Currently, the project is work in progress, with planned upcoming improvements, including the implementation of a login system and reservation management, which will allow users to register, customize their experience, book, and pay directly with credit card from the platform. The website is developed following front-end best practices, with clean, modular, and scalable code, facilitating future back-end integrations and new functionalities. This approach combines user experience, visual design, and scalability, positioning the platform as a complete technological solution for the promotion and management of wine tourism experiences.',
-        websiteUrl: 'https://spanish-wine-camps.vercel.app/',
+        websiteUrl: 'https://spanishwinecamps.com/',
         codeUrl: '',
       },
       project3: {
@@ -196,6 +202,12 @@ export const translations = {
         description: 'This portfolio was developed as a frontend application using React along with Vite as the development and build environment, allowing for fast, modular, and optimized project loading. The application follows an SPA architecture, where all content is dynamically rendered in the DOM through React\'s Virtual DOM.\n\nThe interface is built with Tailwind CSS, which facilitates a sober, responsive, and coherent design, in addition to allowing simple style customization and dynamic color/theme changes. The project structure is based on reusable components, favoring code scalability and maintenance.\n\nThe site incorporates multilingual support, managing content dynamically to adapt to different languages without reloading the page. User experience, performance, and visual clarity were prioritized, maintaining a clear separation between logic, presentation, and structure.',
         websiteUrl: 'https://rauldavila.io',
         codeUrl: 'https://github.com/radavilae/portfolio',
+      },
+      project4: {
+        title: 'Artistc Portfolio Michele Perna Bauer',
+        description: 'I developed this artistic portfolio with WordPress, prioritizing a clean, elegant, and fully responsive visual presentation to showcase artwork and professional trajectory. The site is built on a modular base using the Blocksy theme and the Gutenberg block editor, making content management, section editing, and future scalability easier without sacrificing performance or visual consistency.\n\nThe website architecture is content-oriented, with clear navigation, refined typography, basic SEO optimization, and a layout adapted to different devices. This approach supports agile maintenance and updates while ensuring a smooth and professional user experience.',
+        websiteUrl: 'https://michelepbauer.space/',
+        codeUrl: '',
       },
     },
     contact: {

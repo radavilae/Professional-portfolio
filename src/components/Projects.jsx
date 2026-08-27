@@ -9,9 +9,11 @@ import { translations } from '../translations/translations';
 // Importamos las imágenes de los proyectos
 // React necesita que las imágenes se importen explícitamente
 import uniformesCandiImage from '../assets/images/40candi.jpeg';
-import spanishWineCampsImage from '../assets/images/spanishwinecamps.jpg';
+import spanishWineCampsImage from '../assets/images/spanishwinecamps.png';
 import raulDavilaImage from '../assets/images/rauldavila.jpg';
 import photoMicheleImage from '../assets/images/photomichele.jpeg';
+import carHubImage from '../assets/images/car-hub.png';
+import pongImage from '../assets/images/PONG.png';
 
 const Projects = () => {
   // 🎯 Obtenemos el idioma actual y las traducciones
@@ -25,7 +27,7 @@ const Projects = () => {
       id: 1,  // Identificador único
       title: t.projects.project1.title,           // Título (desde traducciones)
       description: t.projects.project1.description, // Descripción (desde traducciones)
-      technologies: ['React', 'Vite', 'JavaScript', 'HTML5', 'CSS3', 'Tailwind CSS', 'MongoDB'],
+      technologies: ['React 19', 'Vite 6', 'React Router 7', 'JavaScript', 'HTML5', 'CSS3', 'Tailwind CSS', 'OpenAI', 'WhatsApp', 'Sharp'],
       websiteUrl: t.projects.project1.websiteUrl, // URL del sitio web
       codeUrl: t.projects.project1.codeUrl,       // URL del código fuente
       image: uniformesCandiImage,                 // Imagen del proyecto
@@ -34,7 +36,7 @@ const Projects = () => {
       id: 2,
       title: t.projects.project2.title,
       description: t.projects.project2.description,
-      technologies: ['React', 'Vite', 'JavaScript', 'HTML5', 'CSS3', 'Tailwind CSS', 'Strapi 5 CMS', 'GitHub Actions', 'Render', 'PostgreSQL', 'React Router', 'Strapi 5', 'Node.js', 'REST API', 'Vercel'],
+      technologies: ['React 19', 'Vite 7', 'Tailwind CSS', 'Context API', 'Supabase Auth', 'Custom Hooks', 'RLS', 'Stripe', 'PaymentIntents', 'Webhooks', 'Edge Functions', 'Vitest', 'Vercel'],
       websiteUrl: t.projects.project2.websiteUrl,
       codeUrl: t.projects.project2.codeUrl,
       image: spanishWineCampsImage,
@@ -43,7 +45,7 @@ const Projects = () => {
       id: 3,
       title: t.projects.project3.title,
       description: t.projects.project3.description,
-      technologies: ['React', 'Vite', 'JavaScript', 'HTML5', 'CSS3', 'Tailwind CSS', 'EmailJS'],
+      technologies: ['React 19', 'Vite 7', 'React Router 7', 'Context API', 'EmailJS', 'CI/CD'],
       websiteUrl: t.projects.project3.websiteUrl,
       codeUrl: t.projects.project3.codeUrl,
       image: raulDavilaImage,
@@ -52,10 +54,28 @@ const Projects = () => {
       id: 4,
       title: t.projects.project4.title,
       description: t.projects.project4.description,
-      technologies: ['WordPress', 'Blocksy', 'Gutenberg', 'HTML5', 'CSS3', 'Responsive Design', 'SEO'],
+      technologies: ['WordPress', 'Gutenberg', 'PHP', 'MySQL', 'DNS Management', 'SSL Certificates', 'Hostinger (hPanel)'],
       websiteUrl: t.projects.project4.websiteUrl,
       codeUrl: t.projects.project4.codeUrl,
       image: photoMicheleImage,
+    },
+    {
+      id: 5,
+      title: t.projects.project5.title,
+      description: t.projects.project5.description,
+      technologies: ['Next.js', 'App Router', 'React 19', 'TypeScript', 'Tailwind CSS', 'Server Components', 'Client Components', 'Headless UI'],
+      websiteUrl: t.projects.project5.websiteUrl,
+      codeUrl: t.projects.project5.codeUrl,
+      image: carHubImage,
+    },
+    {
+      id: 6,
+      title: t.projects.project6.title,
+      description: t.projects.project6.description,
+      technologies: ['Vanilla JavaScript', 'HTML5 Canvas', 'CSS3', 'Game Loop', 'Collisions', 'Real-time Scoring', 'Responsive UI'],
+      websiteUrl: t.projects.project6.websiteUrl,
+      codeUrl: t.projects.project6.codeUrl,
+      image: pongImage,
     },
   ];
 
@@ -118,8 +138,8 @@ const Projects = () => {
                     </a>
                   )}
                   
-                  {/* Botón "Ver Código" - solo si hay URL Y no es el proyecto 3 */}
-                  {project.codeUrl && project.id !== 3 && (
+                  {/* Botón "Ver Código" - solo si hay URL Y no es el proyecto 3 ni el proyecto 5 */}
+                  {project.codeUrl && project.id !== 3 && project.id !== 5 && (
                     <a
                       href={project.codeUrl}
                       target="_blank"

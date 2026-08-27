@@ -16,15 +16,6 @@ const About = () => {
             <p className="text-lg">
               {t.about.paragraph1}
             </p>
-            <p className="text-lg">
-              {t.about.paragraph2}
-            </p>
-            <p className="text-lg">
-              {t.about.paragraph3}
-            </p>
-            <p className="text-lg">
-              {t.about.paragraph4}
-            </p>
           </div>
           <div className="mt-12 text-center">
             <button
@@ -37,7 +28,7 @@ const About = () => {
           <div className="mt-12">
             <h3 className="text-2xl font-light text-gray-900 mb-6">{t.about.technologies}</h3>
             <div className="flex flex-wrap gap-3">
-              {['React', 'Node.js', 'JavaScript', 'TypeScript', 'MongoDB', 'PostgreSQL', 'Express', 'Tailwind CSS', 'Python', 'WordPress', 'Express.js', 'Git', 'Make', 'n8n'].map((tech) => (
+              {['React 18/19', 'TypeScript', 'JavaScript ES6+', 'Vite', 'HTML5', 'CSS', 'Tailwind CSS', 'React Router 7', 'Context API', 'Jasmine', 'Jest', 'Vitest', 'React Testing Library', 'Node.js', 'Express.js', 'Strapi 5', 'RESTful APIs', 'Supabase Edge Functions', 'MongoDB', 'PostgreSQL', 'Git', 'GitHub Actions', 'Vercel', 'Render', 'Python', 'WordPress', 'Hostinger (hPanel)', 'IONOS', 'Scrum', 'Kanban'].map((tech) => (
                 <span
                   key={tech}
                   className="px-4 py-2 bg-white border border-gray-200 text-gray-700 text-sm"
@@ -50,104 +41,22 @@ const About = () => {
         </div>
       </section>
 
-      {/* Modal del CV */}
+      {/* Modal del CV con PDF */}
       {showCV && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4 overflow-y-auto">
-          <div className="bg-white max-w-3xl w-full rounded-lg shadow-lg p-8 relative my-8 max-h-[90vh] overflow-y-auto">
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4">
+          <div className="bg-white max-w-6xl w-full rounded-lg shadow-2xl relative h-[90vh] flex flex-col">
             <button
               onClick={() => setShowCV(false)}
-              className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-2xl"
+              className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-3xl z-10 bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-md"
             >
               ×
             </button>
-            <div className="space-y-6">
-              {/* Header */}
-              <div className="text-center border-b border-gray-200 pb-4">
-                <h3 className="text-3xl font-light text-gray-900 mb-2">{t.about.cv.name}</h3>
-                <p className="text-xl text-gray-700 mb-4">{t.about.cv.position}</p>
-                <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-600">
-                  <div>{t.about.cv.email}: raul.davila.esp@gmail.com</div>
-                  <div>{t.about.cv.phone}: +34 617 043 838</div>
-                  <div>{t.about.cv.location}: Barcelona</div>
-                </div>
-                <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-600 mt-2">
-                  <div>{t.about.cv.linkedin}: <a href="https://www.linkedin.com/in/radavilae/" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:underline">www.linkedin.com/in/radavilae</a></div>
-                  <div>{t.about.cv.github}: <a href="https://github.com/radavilae" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:underline">radavilae</a></div>
-                </div>
-              </div>
-
-              {/* Summary */}
-              <div>
-                <h4 className="text-lg font-semibold text-gray-900 mb-2">{t.about.cv.summary}</h4>
-                <p className="text-gray-700">{t.about.cv.summaryText}</p>
-              </div>
-
-              {/* Skills */}
-              <div>
-                <h4 className="text-lg font-semibold text-gray-900 mb-2">{t.about.cv.skills}</h4>
-                <div className="space-y-2">
-                  <div>
-                    <p className="font-medium text-gray-800 mb-1">{t.about.cv.hardSkills}:</p>
-                    <p className="text-gray-700 text-sm">{t.about.cv.hardSkillsList}</p>
-                  </div>
-                  <div>
-                    <p className="font-medium text-gray-800 mb-1">{t.about.cv.softSkills}:</p>
-                    <p className="text-gray-700 text-sm">{t.about.cv.softSkillsList}</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Education */}
-              <div>
-                <h4 className="text-lg font-semibold text-gray-900 mb-3">{t.about.cv.education}</h4>
-                <ul className="space-y-2">
-                  {t.about.cv.educationItems.map((item, index) => (
-                    <li key={index} className="text-gray-700 text-sm">• {item}</li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Projects */}
-              <div>
-                <h4 className="text-lg font-semibold text-gray-900 mb-3">{t.about.cv.projects}</h4>
-                <ul className="space-y-2">
-                  {t.about.cv.projectsItems.map((item, index) => {
-                    const parts = item.split(': ');
-                    const title = parts[0];
-                    const url = parts[1];
-                    return (
-                      <li key={index} className="text-gray-700 text-sm">
-                        {title}: <a href={url} target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:underline">{url}</a>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div>
-
-              {/* Work Experience */}
-              <div>
-                <h4 className="text-lg font-semibold text-gray-900 mb-3">{t.about.cv.workExperience}</h4>
-                <ul className="space-y-2">
-                  {t.about.cv.workItems.map((item, index) => (
-                    <li key={index} className="text-gray-700 text-sm">• {item}</li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Languages */}
-              <div>
-                <h4 className="text-lg font-semibold text-gray-900 mb-2">{t.about.cv.languages}</h4>
-                <p className="text-gray-700 text-sm">{t.about.cv.languagesList}</p>
-              </div>
-            </div>
-
-            <div className="mt-8 text-center">
-              <button
-                onClick={() => setShowCV(false)}
-                className="px-6 py-2 border border-gray-900 text-gray-900 text-sm hover:bg-gray-50 transition-colors"
-              >
-                {t.about.cv.close}
-              </button>
+            <div className="flex-1 overflow-hidden p-4">
+              <iframe
+                src="/CV-Raul-Davila-ESP.pdf"
+                className="w-full h-full border-0"
+                title="CV Raúl Dávila"
+              />
             </div>
           </div>
         </div>
